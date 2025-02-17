@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://html5shin.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+	<title>Formularios</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1>Formulários Bootstrap</h1>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<h3>Cadastre-se</h3>
+			<form>
+
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" name="Nome" class="form-control" id="nome">
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" class="form-control" id="email">
+				</div>
+
+				<div class="form-group">
+					<label for="senha">Senha</label>
+					<input type="password" name="Senha" class="form-control" id="senha">
+				</div>
+				
+				<div class="checkbox">
+
+					<label>
+						<input type="checkbox" name="aceito"> Aceito os termos do Serviço
+					</label>
+
+				</div>
+
+				<div class="radio">
+
+					<label>
+						<input type="radio" name="opçoes">PHP
+					</label>
+
+					<label>
+						<input type="radio" name="opçoes">Java
+					</label>
+				</div>
+				<button type="submit" class="btn-default">Cadastrar</button>
+			</form>
+		</div>
+		<div class="col-sm-4">
+			<h3>Logar</h3>
+
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Digite Seu E-mail">
+				</div>
+
+				<br>
+				
+				<div class="form-group">
+					<input type="password" class="form-control" id="senha" placeholder="Digite Sua Senha">
+				</div>
+
+				<br>
+
+				<button type="submit" class="btn btn-primary">Logar</button>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libis/jqueary/1.11.3/jqueary.mim.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

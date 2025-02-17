@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://html5shin.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+	<title>Janela Modal</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1>Modal window</h1>
+	</div>
+
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janela">Logar</button>
+
+	<!--Janela-->
+	<form class="modal fade" id="janela">
+
+		<div class="modal-dialog modal-dialog-centered modal-me">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h3 class="modal-title fs-5">Efetuar Login</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+						
+				</div>
+
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" placeholder="Digite Seu E-mail" required>
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="senha">Senha</label>
+						<input type="password" class="form-control" id="senha" placeholder="Digite Sua Senha" required>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<div class="btn-group">
+						<button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" aria-label="close">Cancelar</button>
+						<button type="submit" class="btn btn-primary">Cadastrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libis/jqueary/1.11.3/jqueary.mim.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" ></script>
+</body>
+</html>
